@@ -4,19 +4,19 @@
             "id": 1,
             "name": "Espada mágica",
             "price": 2000,
-            "image": "../../src/images/espada.jpg"
+            "image": "images/espada.png"
         },
         {
             "id": 2,
-            "name": "Poção de vida",
+            "name": "Poção de Vida",
             "price": 2.99,
-            "image": "/espada.jpg"
+            "image": "images/vida.png"
         },
         {
             "id": 3,
-            "name": "Sanduíche revigorante",
+            "name": "Poção de Mana",
             "price": 29.99,
-            "image": "images/espada.jpg"
+            "image": "images/mana.png"
         }
     ]
 }

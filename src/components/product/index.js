@@ -24,18 +24,25 @@ const Product = ({ name, price, image }) => {
 
 const ListItem = styled.li`
   width:200px;
-  height:200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align:center;
   margin: 10px 0;
-  padding: 10px;
+  padding: 30px;
   background-color: #2f3042;
-
+  border-radius:10px;
+  border:3px solid #fff;
   h3 {
       margin-bottom: 10px;
   }
+  &:hover{
+    background: rgba(185, 185, 199, 0.99);
+    color:#2f3042;
+    cursor:pointer;
+    border:3px solid #2f3042;
+  }
+
 
   button {
       align-self: center;
@@ -45,7 +52,17 @@ const ListItem = styled.li`
       background-color: #ff7272;
       color: #ffffff;
       cursor: pointer;
+      margin-top:10px;
   }
+
+  img{
+    width:80%;
+    height:250px;
+    object-fit:cover;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
 `;
 
 
