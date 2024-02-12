@@ -2,8 +2,14 @@ import styled from "styled-components";
 import { CartProductsCounter } from "../cart-products-counter";
 
 import { Link } from 'react-router-dom'
+import { useSelector } from "react-redux";
 
 const Header = () => {
+
+  const cartProducts = useSelector(state => state.cartProducts)
+
+  console.log(cartProducts)
+
   return (
     <Container>
       <Link to="/">
