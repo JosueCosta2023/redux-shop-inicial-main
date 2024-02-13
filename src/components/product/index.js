@@ -1,6 +1,10 @@
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { addProductsToCart } from "../../store/actions/cart";
 
 const Product = ({ name, price, image }) => {
+
+  const dispatch = useDispatch()
 
   return (
     <ListItem>
@@ -15,7 +19,7 @@ const Product = ({ name, price, image }) => {
           })}
         </p>
       </div>
-      <button>
+      <button onClick={() => dispatch(addProductsToCart({ name, price, image }))}>
         Adicionar ao carrinho
       </button>
     </ListItem>
@@ -32,7 +36,7 @@ const ListItem = styled.li`
   padding: 30px;
   background-color: #2f3042;
   border-radius:10px;
-  border:3px solid #fff;
+  border:3px solid #fff9;
   h3 {
       margin-bottom: 10px;
   }
@@ -40,7 +44,7 @@ const ListItem = styled.li`
     background: rgba(185, 185, 199, 0.99);
     color:#2f3042;
     cursor:pointer;
-    border:3px solid #2f3042;
+    border:3px solid #fff;
   }
 
 

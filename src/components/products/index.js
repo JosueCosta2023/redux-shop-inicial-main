@@ -14,7 +14,7 @@ const Products = ({ products }) => {
                 image={product.image} />
           ))
         ) : (
-          <li>Nenhum produto encontrado</li>
+          <li>Não há produtos em seu carrinho de compras.</li>
         )}
       </UlProduct>
     </>

@@ -8,7 +8,6 @@ const Header = () => {
 
   const cartProducts = useSelector(state => state.cartProducts)
 
-  console.log(cartProducts)
 
   return (
     <Container>
