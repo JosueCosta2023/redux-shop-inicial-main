@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Espada mágica",
+            "price": 2000,
+            "image": "images/espada.png"
+        },
+        {
+            "id": 2,
+            "name": "Poção de Vida",
+            "price": 2.99,
+            "image": "images/pocao.png"
+        },
+        {
+            "id": 3,
+            "name": "Poção de Mana",
+            "price": 29.99,
+            "image": "images/mana.png"
+        }
+    ]
+}
